@@ -1,0 +1,38 @@
+#container {
+  background-color: aqua;
+  padding: 10px;
+  width: 400px;
+  height: 2000px;
+}
+
+.desc {
+  width: 200px;
+  height: 100px;
+  border: do;
+  margin: 10px;
+  padding: 10px;
+}
+
+#clip-border {
+  background-clip: border-box;
+  background-color: brown;
+}
+
+#clip-padding {
+  /* background-color: violet;
+  background-clip: padding-box;*/
+  background: radial-gradient(white, yellow, red);
+}
+
+#clip-content {
+  /* background-color: cadetblue;
+  background-clip: content-box; */
+  background: linear-gradient(to right bottom, blue, white 30%, red 60%, black);
+}
+
+body {
+  background-image: url(200.gif);
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  background-attachment: scroll;
+}

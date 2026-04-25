@@ -1,0 +1,55 @@
+p {
+  color: blue;
+}
+
+section p {
+  color: red;
+}
+
+section > p {
+  font-weight: bolder;
+}
+
+h1 + p {
+  font-size: 25px;
+}
+
+h1 ~ p {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+a[href] {
+  background-color: yellow;
+}
+
+a[href='https://google.com'] {
+  background-color: aqua;
+}
+
+[class~='button'] {
+  font-size: 25px;
+}
+
+[class|='but'] {
+  font-size: 35px;
+}
+[class^='button'] {
+  background-color: aquamarine;
+}
+a:link {
+  color: black;
+}
+a:visited {
+  color: chocolate;
+}
+a:active {
+  background-color: blueviolet;
+}
+a:hover {
+  background-color: chartreuse;
+}
+
+input:checked + label {
+  color: red;
+  font-weight: bold;
+}

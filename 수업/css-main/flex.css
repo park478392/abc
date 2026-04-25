@@ -1,0 +1,18 @@
+.container {
+  display: flex;
+  /*flex-direction: column; */
+  background-color: dodgerblue;
+  justify-content: space-between;
+  align-items: flex-start;
+  height: 300px;
+  flex-wrap: wrap;
+}
+
+.container > div {
+  background-color: antiquewhite;
+  margin: 10px;
+  width: 100px;
+  height: 100px;
+  font-size: 30px;
+  padding: 20px;
+}

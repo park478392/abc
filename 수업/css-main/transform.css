@@ -1,0 +1,25 @@
+div {
+  width: 100px;
+  height: 100px;
+  background-color: aquamarine;
+}
+
+#div1 {
+  transform: translate(50px, 30px, 10px);
+  background-color: blue;
+}
+
+#div2 {
+  background-color: blueviolet;
+  transform: scale(0.6, 1.2);
+}
+
+#div3 {
+  background-color: chartreuse;
+  transform: rotateZ(10deg);
+}
+
+#div4 {
+  background-color: brown;
+  transform: skew(30deg, 20deg);
+}

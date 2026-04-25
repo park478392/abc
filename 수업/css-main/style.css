@@ -1,0 +1,74 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* .outer {
+  color: brown;
+  font-size: x-large;
+}
+
+body {
+  background-color: aquamarine;
+}
+
+#menu {
+  background-color: black;
+  color: rgb(228, 153, 153);
+}
+
+p {
+  font-style: italic;
+}
+
+#container {
+  width: 500px;
+  margin: 20px auto;
+  padding: 10px;
+  border: 3px dotted #b62222;
+  text-align: center;
+}
+
+p.center {
+  text-align: center;
+}
+
+.large {
+  font-size: 30px;
+}
+
+p,
+h1,
+h2,
+h3,
+h4 {
+  font-weight: bolder;
+} */
+
+p {
+  color: blue;
+}
+
+.pclass {
+  color: red;
+}
+
+#pid {
+  color: green;
+}
+
+#pid {
+  color: rgb(57, 47, 4);
+}
+
+.first {
+  color: chocolate;
+}
+
+/* .second {
+  color: crimson;
+}
+
+.third {
+  color: green;
+} */

@@ -1,0 +1,25 @@
+p {
+  width: 300px;
+  height: 100px;
+}
+
+#pos1 {
+  position: absolute;
+  background-color: aqua;
+  left: 50px;
+  top: 100px;
+}
+
+#pos2 {
+  position: relative;
+  background-color: brown;
+  top: 200px;
+  right: 50px;
+}
+
+#pos3 {
+  position: absolute;
+  background-color: yellowgreen;
+  bottom: 20px;
+  right: 150px;
+}
