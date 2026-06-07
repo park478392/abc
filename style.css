@@ -321,10 +321,6 @@ section::before {
   grid-template-columns: repeat(2, 1fr);
 }
 
-#team .grid.two {
-  grid-template-columns: 1fr;
-}
-
 .team-overview-section + section {
   display: none;
 }
@@ -576,13 +572,8 @@ section::before {
   grid-template-columns: repeat(3, 1fr);
 }
 
-.four {
-  grid-template-columns: repeat(4, 1fr);
-}
-
 /* 카드 */
-.card,
-.hero-card {
+.card {
   padding: 24px;
   border-radius: 18px;
 
@@ -590,14 +581,6 @@ section::before {
   border: 2px solid #0f766e;
 
   box-shadow: 0 10px 28px rgba(15, 118, 110, 0.1);
-}
-
-#members .card {
-  padding: 40px 24px;
-  min-height: 280px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
 }
 
 .github-btn {
@@ -623,71 +606,20 @@ section::before {
   transform: translateY(-2px);
 }
 
-.card:hover,
-.hero-card:hover {
+.card:hover {
   transform: translateY(-6px);
   box-shadow: 0 0 28px rgba(15, 118, 110, 0.3);
 }
 
-.card h3,
-.hero-card h3 {
+.card h3 {
   margin-bottom: 12px;
 
   color: #0f766e;
   text-shadow: 0 0 8px rgba(15, 118, 110, 0.5);
 }
 
-.card p,
-.hero-card li {
+.card p {
   color: #333333;
-}
-
-.hero-card ul {
-  display: grid;
-  gap: 10px;
-}
-
-.main-summary {
-  padding: 54px 0 76px;
-  background: rgba(255, 255, 255, 0.65);
-}
-
-.summary-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 22px;
-}
-
-.summary-card {
-  min-height: 170px;
-  padding: 24px;
-  border-radius: 8px;
-
-  background: rgba(255, 255, 255, 0.96);
-  border: 1px solid rgba(15, 118, 110, 0.22);
-
-  box-shadow: 0 12px 26px rgba(15, 118, 110, 0.08);
-  transition:
-    transform 0.25s,
-    box-shadow 0.25s,
-    border-color 0.25s;
-}
-
-.summary-card:hover {
-  transform: translateY(-4px);
-  border-color: rgba(15, 118, 110, 0.5);
-  box-shadow: 0 16px 32px rgba(15, 118, 110, 0.14);
-}
-
-.summary-card h3 {
-  margin-bottom: 12px;
-  color: #0f766e;
-  font-size: 1.2rem;
-}
-
-.summary-card p {
-  color: #555555;
-  font-size: 0.98rem;
 }
 
 .featured-work {
@@ -700,15 +632,13 @@ section::before {
   text-align: center;
 }
 
-.section-heading h2,
-.tech-wrap h2 {
+.section-heading h2 {
   color: #0f766e;
   font-size: 2rem;
   margin-bottom: 12px;
 }
 
-.section-heading p,
-.tech-wrap p {
+.section-heading p {
   color: #666666;
 }
 
@@ -765,44 +695,6 @@ section::before {
   flex: 1;
 }
 
-.tech-section {
-  padding: 88px 0 104px;
-  background: rgba(255, 255, 255, 0.8);
-}
-
-.tech-wrap {
-  max-width: 980px;
-  text-align: center;
-}
-
-.tech-tags {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 14px;
-  justify-content: center;
-  margin-top: 26px;
-}
-
-.tech-tags span {
-  padding: 13px 18px;
-  border-radius: 999px;
-
-  background: #ffffff;
-  border: 1px solid rgba(15, 118, 110, 0.35);
-  color: #115e59;
-  font-weight: 800;
-  font-size: 1rem;
-  box-shadow: 0 8px 18px rgba(15, 118, 110, 0.07);
-}
-
-.about-page-title {
-  padding: 58px 0 30px;
-  background: rgba(247, 250, 255, 0.9);
-  border-bottom: 1px solid rgba(15, 118, 110, 0.25);
-}
-
-.about-page-title::before,
-.about-intro::before,
 .about-skills-section::before {
   display: none;
 }
@@ -811,56 +703,6 @@ section::before {
   color: #0f766e;
   font-weight: 800;
   margin-bottom: 6px;
-}
-
-.about-page-title h1 {
-  font-size: 2.4rem;
-  color: #111111;
-}
-
-.about-intro {
-  padding: 62px 0;
-  background: rgba(255, 255, 255, 0.7);
-}
-
-.about-layout {
-  display: grid;
-  grid-template-columns: 1.2fr 0.8fr;
-  gap: 32px;
-  align-items: center;
-}
-
-.about-text-card,
-.profile-card {
-  padding: 30px;
-  border-radius: 8px;
-  background: rgba(255, 255, 255, 0.96);
-  border: 1px solid rgba(15, 118, 110, 0.22);
-  box-shadow: 0 14px 30px rgba(15, 118, 110, 0.08);
-}
-
-.about-text-card h2 {
-  color: #0f766e;
-  font-size: 1.5rem;
-  margin-bottom: 18px;
-}
-
-.about-text-card p {
-  color: #444444;
-  margin-bottom: 14px;
-}
-
-.about-text-card p:last-child {
-  margin-bottom: 0;
-}
-
-.profile-card {
-  min-height: 330px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
 }
 
 .profile-circle {
@@ -885,16 +727,6 @@ section::before {
   font-weight: 900;
 }
 
-.profile-card h2 {
-  color: #222222;
-  font-size: 1.25rem;
-  margin-bottom: 6px;
-}
-
-.profile-card p {
-  color: #666666;
-}
-
 .about-skills-section {
   padding: 58px 0 82px;
   background: rgba(247, 250, 255, 0.9);
@@ -914,28 +746,6 @@ section::before {
   color: #666666;
 }
 
-.about-skill-grid {
-  display: grid;
-  grid-template-columns: repeat(6, 1fr);
-  gap: 14px;
-}
-
-.about-skill-card {
-  min-height: 82px;
-  padding: 18px 12px;
-  border-radius: 8px;
-
-  background: #ffffff;
-  border: 1px solid rgba(15, 118, 110, 0.28);
-  box-shadow: 0 10px 22px rgba(15, 118, 110, 0.07);
-
-  display: grid;
-  place-items: center;
-  color: #115e59;
-  font-weight: 900;
-  text-align: center;
-}
-
 .about-hero {
   padding: 72px 0 64px;
   background:
@@ -952,8 +762,7 @@ section::before {
 }
 
 .about-hero::before,
-.about-story::before,
-.about-learning-section::before {
+.about-story::before {
   display: none;
 }
 
@@ -1092,23 +901,6 @@ section::before {
   color: #115e59;
   font-weight: 900;
   text-align: center;
-}
-
-.skills {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-}
-
-.skills span {
-  padding: 8px 12px;
-  border-radius: 999px;
-
-  background: rgba(15, 118, 110, 0.15);
-  border: 1px solid #0f766e;
-
-  color: #000000;
-  font-weight: 800;
 }
 
 /* 링크 */
@@ -1750,13 +1542,9 @@ footer {
   .hero-wrap,
   .two,
   .three,
-  .summary-grid,
   .work-grid,
-  .tech-wrap,
-  .about-layout,
   .about-hero-layout,
   .about-story-grid,
-  .about-learning-grid,
   .about-skills-wrap,
   .team-overview-layout,
   .team-detail-row,
@@ -1778,14 +1566,6 @@ footer {
 
   .team-overview-card {
     min-height: auto;
-  }
-
-  .about-skill-grid {
-    grid-template-columns: repeat(3, 1fr);
-  }
-
-  .tech-tags {
-    justify-content: flex-start;
   }
 
   .about-skill-list {
@@ -1887,19 +1667,6 @@ footer {
     padding: 10px;
   }
 
-  .about-page-title {
-    padding: 46px 0 26px;
-  }
-
-  .about-page-title h1 {
-    font-size: 2rem;
-  }
-
-  .about-text-card,
-  .profile-card {
-    padding: 24px;
-  }
-
   .profile-circle {
     width: 150px;
     height: 150px;
@@ -1908,10 +1675,6 @@ footer {
   .about-profile .profile-circle {
     width: 180px;
     height: 180px;
-  }
-
-  .about-skill-grid {
-    grid-template-columns: repeat(2, 1fr);
   }
 
   .about-skill-list span {
