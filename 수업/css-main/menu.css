@@ -1,0 +1,130 @@
+/* 공통 네비게이션 메뉴 스타일 */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.nav-menu {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  height: 70px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+}
+
+.nav-menu ul {
+  list-style: none;
+  display: flex;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  gap: 0;
+}
+
+.nav-menu li {
+  flex: 1;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.nav-menu a {
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+  font-size: 1rem;
+  padding: 20px 15px;
+  display: block;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s ease;
+  position: relative;
+}
+
+.nav-menu a::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 3px;
+  background: white;
+  transition: 0.3s ease;
+}
+
+.nav-menu a:hover {
+  background: rgba(255, 255, 255, 0.1);
+  color: #ffffff;
+}
+
+.nav-menu a:hover::before {
+  width: 100%;
+}
+
+.nav-menu a.active {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.nav-menu a.active::before {
+  width: 100%;
+  height: 4px;
+}
+
+.nav-menu li:first-child a {
+  font-size: 1.3rem;
+  font-weight: 900;
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.nav-menu li:first-child a:hover {
+  background: rgba(0, 0, 0, 0.3);
+}
+
+/* 반응형 디자인 */
+@media (max-width: 768px) {
+  .nav-menu {
+    height: auto;
+    flex-wrap: wrap;
+  }
+
+  .nav-menu ul {
+    flex-wrap: wrap;
+  }
+
+  .nav-menu li {
+    flex: 0 0 50%;
+    height: auto;
+  }
+
+  .nav-menu a {
+    padding: 12px 10px;
+    font-size: 0.95rem;
+  }
+
+  .nav-menu li:first-child {
+    flex: 0 0 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .nav-menu li {
+    flex: 0 0 50%;
+  }
+
+  .nav-menu a {
+    padding: 10px 5px;
+    font-size: 0.85rem;
+  }
+}

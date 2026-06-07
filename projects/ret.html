@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>룰렛 게임</title>
+    <link rel="stylesheet" href="ret.css" />
+  </head>
+  <body>
+    <main class="container">
+      <h1>룰렛 게임</h1>
+
+      <section class="roulette-wrapper" aria-label="룰렛">
+        <div class="pointer" aria-hidden="true"></div>
+        <div class="roulette" id="roulette"></div>
+        <div class="hub" aria-hidden="true"></div>
+      </section>
+
+      <form class="item-form" id="itemForm">
+        <label class="sr-only" for="itemInput">항목 입력</label>
+        <input
+          id="itemInput"
+          class="item-input"
+          type="text"
+          maxlength="12"
+          placeholder="추가할 항목"
+          autocomplete="off"
+        />
+        <button class="add-button" type="submit">추가</button>
+      </form>
+
+      <ul class="item-list" id="itemList" aria-label="룰렛 항목"></ul>
+
+      <section class="controls">
+        <button id="spinBtn" class="spin-button" type="button">돌리기</button>
+        <p class="result" id="result" aria-live="polite">
+          결과를 기다리는 중...
+        </p>
+      </section>
+    </main>
+
+    <script src="ret.js"></script>
+  </body>
+</html>

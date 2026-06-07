@@ -1,25 +1,46 @@
+body {
+  font-family: "Segoe UI", "Noto Sans KR", sans-serif;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  min-height: 100vh;
+  padding: 20px;
+  position: relative;
+}
+
 p {
   width: 300px;
   height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  transition: 0.3s ease;
+  color: white;
+  font-size: 1.1rem;
+}
+
+p:hover {
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.3);
 }
 
 #pos1 {
   position: absolute;
-  background-color: aqua;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
   left: 50px;
   top: 100px;
 }
 
 #pos2 {
   position: relative;
-  background-color: brown;
+  background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
   top: 200px;
   right: 50px;
 }
 
 #pos3 {
   position: absolute;
-  background-color: yellowgreen;
+  background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);
   bottom: 20px;
   right: 150px;
 }

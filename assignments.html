@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>과제 - 개인 포트폴리오</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <header>
+      <div class="container navbar">
+        <a href="index.html" class="logo">My Portfolio</a>
+
+        <nav>
+          <ul class="nav-menu">
+            <li><a href="index.html">홈</a></li>
+            <li><a href="about.html">소개</a></li>
+            <li><a href="links.html">GitHub/Blog</a></li>
+            <li><a href="assignments.html">과제</a></li>
+            <li><a href="team.html">팀프로젝트</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main class="portfolio-page">
+      <section class="portfolio-hero">
+        <div class="portfolio-container">
+          <span class="portfolio-label">Assignments & Projects</span>
+          <h1>수업에서 배운 내용을 직접 만든 결과물로 정리했습니다.</h1>
+          <p>
+            HTML, CSS, JavaScript 과제와 개인 프로젝트를 한눈에 볼 수 있도록
+            깔끔한 포트폴리오 형태로 구성했습니다.
+          </p>
+        </div>
+      </section>
+
+      <section class="portfolio-section">
+        <div class="portfolio-container">
+          <div class="portfolio-section-head">
+            <span>Class Work</span>
+            <h2>Assignments</h2>
+          </div>
+
+          <div class="assignment-showcase">
+            <article class="portfolio-card assignment-card">
+              <div class="card-mark">01</div>
+              <h3>HTML 기초</h3>
+              <p>웹 페이지의 기본 구조와 주요 태그를 익힌 첫 과제입니다.</p>
+              <a href="수업/hcj-main/index.html" class="portfolio-button">상세보기</a>
+            </article>
+
+            <article class="portfolio-card assignment-card">
+              <div class="card-mark">02</div>
+              <h3>CSS 레이아웃</h3>
+              <p>색상, 여백, 박스 모델을 활용해 화면을 구성한 과제입니다.</p>
+              <a href="수업/css-main/index.html" class="portfolio-button">상세보기</a>
+            </article>
+
+            <article class="portfolio-card assignment-card">
+              <div class="card-mark">03</div>
+              <h3>미디어와 상호작용</h3>
+              <p>이미지, 오디오, 비디오, 폼 요소를 적용한 실습 과제입니다.</p>
+              <a href="수업/park-siwoo-main/index.html" class="portfolio-button">상세보기</a>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="portfolio-section skills-section">
+        <div class="portfolio-container">
+          <div class="portfolio-section-head">
+            <span>Tech Stack</span>
+            <h2>Skills</h2>
+          </div>
+
+          <div class="skill-badge-grid">
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>JavaScript</span>
+            <span>Git</span>
+            <span>C</span>
+            <span>Java</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="portfolio-section project-section">
+        <div class="portfolio-container">
+          <div class="portfolio-section-head">
+            <span>Featured Work</span>
+            <h2>개인 프로젝트</h2>
+          </div>
+
+          <div class="project-grid">
+            <article class="portfolio-card project-card featured-project">
+              <div class="project-icon">🍱</div>
+              <div>
+                <span class="project-type">JavaScript Project</span>
+                <h3>점심 메뉴 사다리타기</h3>
+                <p>
+                  점심 메뉴를 정하기 위해 JavaScript로 만든 사다리타기
+                  프로젝트입니다. 사용자 입력을 받아 결과를 연결하고, 버튼
+                  이벤트로 게임 흐름을 제어했습니다.
+                </p>
+              </div>
+              <div class="project-actions">
+                <a
+                  href="https://github.com/park478392/sadari.git"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="portfolio-button"
+                  >Github 보기</a
+                >
+                <a
+                  href="projects/sadari.html"
+                  class="portfolio-button secondary"
+                  >Demo 보기</a
+                >
+              </div>
+            </article>
+
+            <article class="portfolio-card project-card">
+              <div class="project-icon">🎯</div>
+              <div>
+                <span class="project-type">JavaScript Project</span>
+                <h3>룰렛</h3>
+                <p>
+                  여러 선택지 중 하나를 무작위로 뽑을 수 있도록 만든 룰렛
+                  프로젝트입니다. 회전 애니메이션과 랜덤 결과 출력 기능을
+                  JavaScript로 구현했습니다.
+                </p>
+              </div>
+              <div class="project-actions">
+                <a
+                  href="https://github.com/park478392"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="portfolio-button"
+                  >Github 보기</a
+                >
+                <a
+                  href="projects/ret.html"
+                  class="portfolio-button secondary"
+                  >Demo 보기</a
+                >
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="portfolio-section timeline-section">
+        <div class="portfolio-container">
+          <div class="portfolio-section-head">
+            <span>Growth Log</span>
+            <h2>Timeline</h2>
+          </div>
+
+          <div class="timeline-list">
+            <article class="timeline-item">
+              <strong>2025</strong>
+              <p>웹 프로그래밍 학습 시작</p>
+            </article>
+            <article class="timeline-item">
+              <strong>2026</strong>
+              <p>팀 프로젝트 진행</p>
+            </article>
+            <article class="timeline-item">
+              <strong>2026</strong>
+              <p>개인 프로젝트 제작</p>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>© 2026 Portfolio</p>
+    </footer>
+  </body>
+</html>

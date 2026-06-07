@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>점심 메뉴 사다리타기</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        min-height: 100vh;
+        padding: 48px 20px;
+        font-family: "Segoe UI", "Noto Sans KR", Arial, sans-serif;
+        color: #111827;
+        background: linear-gradient(135deg, #f8fffd, #eefaf7);
+      }
+
+      main {
+        width: min(980px, 100%);
+        margin: 0 auto;
+      }
+
+      .hero {
+        margin-bottom: 28px;
+      }
+
+      .label {
+        display: inline-block;
+        margin-bottom: 14px;
+        padding: 8px 12px;
+        border-radius: 999px;
+        background: #e6fffb;
+        color: #0f766e;
+        font-weight: 800;
+      }
+
+      h1 {
+        margin-bottom: 10px;
+        font-size: clamp(2rem, 5vw, 3.2rem);
+      }
+
+      p {
+        color: #5b6472;
+      }
+
+      .panel {
+        padding: 28px;
+        border-radius: 22px;
+        background: #ffffff;
+        box-shadow: 0 24px 60px rgba(15, 23, 42, 0.12);
+      }
+
+      .inputs {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 16px;
+        margin-bottom: 22px;
+      }
+
+      label {
+        display: grid;
+        gap: 8px;
+        color: #374151;
+        font-weight: 800;
+      }
+
+      input {
+        width: 100%;
+        padding: 13px 14px;
+        border: 1px solid #d7e4e0;
+        border-radius: 14px;
+        font: inherit;
+      }
+
+      button,
+      a {
+        display: inline-flex;
+        min-height: 46px;
+        align-items: center;
+        justify-content: center;
+        padding: 12px 18px;
+        border: 0;
+        border-radius: 999px;
+        background: #0f766e;
+        color: #ffffff;
+        font: inherit;
+        font-weight: 900;
+        text-decoration: none;
+        cursor: pointer;
+        transition:
+          transform 0.25s,
+          box-shadow 0.25s,
+          background 0.25s;
+      }
+
+      button:hover,
+      a:hover {
+        transform: translateY(-3px);
+        background: #115e59;
+        box-shadow: 0 14px 28px rgba(15, 118, 110, 0.25);
+      }
+
+      .result-grid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 14px;
+        margin-top: 24px;
+      }
+
+      .result {
+        min-height: 78px;
+        padding: 18px;
+        border-radius: 18px;
+        background: #f8fffd;
+        border: 1px solid #d7eee9;
+      }
+
+      .result strong {
+        color: #0f766e;
+      }
+
+      .actions {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 12px;
+      }
+
+      @media (max-width: 720px) {
+        .inputs,
+        .result-grid {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <main>
+      <section class="hero">
+        <span class="label">Lunch Ladder</span>
+        <h1>점심 메뉴 사다리타기</h1>
+        <p>친구 이름과 메뉴를 입력하고 오늘의 점심을 빠르게 정해보세요.</p>
+      </section>
+
+      <section class="panel">
+        <div class="inputs">
+          <label>
+            참여자
+            <input id="names" value="시우, 지민, 형진, 보원" />
+          </label>
+          <label>
+            메뉴
+            <input id="menus" value="김치찌개, 돈가스, 제육볶음, 라멘" />
+          </label>
+        </div>
+
+        <div class="actions">
+          <button type="button" id="start">결과 뽑기</button>
+          <a href="../../assignments.html">포트폴리오로 돌아가기</a>
+        </div>
+
+        <div class="result-grid" id="results"></div>
+      </section>
+    </main>
+
+    <script>
+      const namesInput = document.querySelector("#names");
+      const menusInput = document.querySelector("#menus");
+      const results = document.querySelector("#results");
+
+      function shuffle(items) {
+        return items
+          .map((item) => ({ item, order: Math.random() }))
+          .sort((a, b) => a.order - b.order)
+          .map(({ item }) => item);
+      }
+
+      document.querySelector("#start").addEventListener("click", () => {
+        const names = namesInput.value
+          .split(",")
+          .map((item) => item.trim())
+          .filter(Boolean);
+        const menus = menusInput.value
+          .split(",")
+          .map((item) => item.trim())
+          .filter(Boolean);
+        const mixedMenus = shuffle(menus);
+
+        results.innerHTML = names
+          .map((name, index) => {
+            const menu = mixedMenus[index % mixedMenus.length] || "메뉴 없음";
+            return `<article class="result"><strong>${name}</strong><br />${menu}</article>`;
+          })
+          .join("");
+      });
+    </script>
+  </body>
+</html>

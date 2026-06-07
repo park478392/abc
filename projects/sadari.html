@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>점심 메뉴 사다리타기</title>
+    <link rel="stylesheet" href="sadari.css" />
+  </head>
+  <body>
+    <main class="app">
+      <section class="panel">
+        <h1>점심 메뉴 사다리타기</h1>
+        <p class="intro">후보 메뉴를 입력하고 오늘의 점심을 골라보세요.</p>
+
+        <div class="input-area">
+          <label for="menuInput">메뉴 후보</label>
+          <div class="input-row">
+            <input id="menuInput" type="text" placeholder="예: 김치찌개" />
+            <button id="addMenuButton" type="button">추가</button>
+          </div>
+        </div>
+
+        <ul id="menuList" class="menu-list"></ul>
+
+        <div class="ladder-area">
+          <canvas id="ladderCanvas" width="640" height="360">
+            사다리 그림을 표시할 수 없는 브라우저입니다.
+          </canvas>
+          <div id="ladderCover" class="ladder-cover">사다리 준비 완료</div>
+        </div>
+
+        <div
+          id="numberChoices"
+          class="number-choices"
+          aria-label="출발 번호 선택"
+        ></div>
+
+        <div class="actions">
+          <button id="startButton" type="button">사다리타기!</button>
+          <button id="resetButton" type="button" class="secondary">
+            초기화
+          </button>
+        </div>
+
+        <div id="result" class="result" aria-live="polite">
+          메뉴를 2개 이상 추가해 주세요.
+        </div>
+      </section>
+    </main>
+
+    <script src="sadari.js"></script>
+  </body>
+</html>

@@ -1,55 +1,91 @@
+body {
+  font-family: "Segoe UI", "Noto Sans KR", sans-serif;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  min-height: 100vh;
+  padding: 20px;
+}
+
 p {
-  color: blue;
+  color: #333;
+  font-size: 1.1rem;
+  line-height: 1.8;
+  margin: 15px 0;
 }
 
 section p {
-  color: red;
+  color: #667eea;
+  font-weight: 600;
 }
 
 section > p {
-  font-weight: bolder;
+  font-weight: 700;
+  padding: 10px;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 8px;
 }
 
 h1 + p {
-  font-size: 25px;
+  font-size: 1.5rem;
+  color: #764ba2;
+  font-weight: 600;
 }
 
 h1 ~ p {
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family: Georgia, "Times New Roman", serif;
+  font-style: italic;
 }
 
 a[href] {
-  background-color: yellow;
+  background-color: #ffe66d;
+  padding: 5px 10px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.3s ease;
 }
 
-a[href='https://google.com'] {
-  background-color: aqua;
+a[href="https://google.com"] {
+  background-color: #667eea;
+  color: white;
 }
 
-[class~='button'] {
-  font-size: 25px;
+[class~="button"] {
+  font-size: 1.3rem;
+  font-weight: 600;
 }
 
-[class|='but'] {
-  font-size: 35px;
+[class|="but"] {
+  font-size: 1.5rem;
+  font-weight: 700;
 }
-[class^='button'] {
-  background-color: aquamarine;
+
+[class^="button"] {
+  background-color: #f093fb;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 8px;
 }
+
 a:link {
-  color: black;
+  color: #667eea;
 }
+
 a:visited {
-  color: chocolate;
+  color: #764ba2;
 }
+
 a:active {
-  background-color: blueviolet;
+  background-color: #f5576c;
+  color: white;
 }
+
 a:hover {
-  background-color: chartreuse;
+  background-color: #43e97b;
+  color: white;
 }
 
 input:checked + label {
-  color: red;
-  font-weight: bold;
+  color: #f5576c;
+  font-weight: 700;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
 }

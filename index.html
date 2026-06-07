@@ -14,11 +14,11 @@
 
         <nav>
           <ul class="nav-menu">
-            <li><a href="#home">홈</a></li>
-            <li><a href="#about">소개</a></li>
-            <li><a href="#links">GitHub/Blog</a></li>
-            <li><a href="#assignments">과제</a></li>
-            <li><a href="#team">팀프로젝트</a></li>
+            <li><a href="index.html">홈</a></li>
+            <li><a href="about.html">소개</a></li>
+            <li><a href="links.html">GitHub/Blog</a></li>
+            <li><a href="assignments.html">과제</a></li>
+            <li><a href="team.html">팀 프로젝트</a></li>
           </ul>
         </nav>
       </div>
@@ -30,238 +30,82 @@
           <div class="hero-text">
             <span class="hero-badge">Portfolio</span>
 
-            <h1>
-              성장 과정을 기록하는<br />
-              개인 포트폴리오
+            <h1
+              id="typing-title"
+              data-line-one="개발을 배우며 만든 결과물들을"
+              data-line-two="정리한 포트폴리오"
+            >
+              개발을 배우며 만든 결과물들을<br />
+              정리한 포트폴리오
             </h1>
 
             <p>
-              HTML과 CSS를 활용하여 제작한 반응형 개인 포트폴리오
-              홈페이지입니다.
+              수업 과제와 팀 프로젝트를 진행하며 직접 구현한 내용을
+              정리했습니다.
             </p>
 
-            <a href="#assignments" class="btn">과제 보러가기</a>
+            <a href="about.html" class="btn">소개 보기</a>
           </div>
 
-          <div class="hero-card">
-            <h3>포트폴리오 구성</h3>
-            <ul>
-              <li>자기소개</li>
-              <li>GitHub / 블로그 링크</li>
-              <li>과제 소개</li>
-              <li>팀프로젝트 소개</li>
-            </ul>
-          </div>
-        </div>
-      </section>
-
-      <section id="about">
-        <div class="container">
-          <h2 class="section-title">About Me</h2>
-
-          <div class="grid two">
-            <article class="card">
-              <h3>자기소개</h3>
-              <p>정보보호학을 공부하는 학생입니다.</p>
-              <p>여러가지 전공 수업을 들으며 진로를 고민중입니다.</p>
-              <p>웹프로그래밍 수업을 통해 웹 개발에도 관심이 생겼습니다.</p>
-              <p>앞으로도 다양한 기술을 배우며 성장해 나가고 싶습니다.</p>
-            </article>
-
-            <article class="card">
-              <h3>수강중인 전공수업</h3>
-              <div class="skills">
-                <span>HTML</span>
-                <span>CSS</span>
-                <span>JAVASCRIPT</span>
-                <span>LINUX</span>
-                <span>C언어</span>
-                <span>JAVA</span>
-                <span>보안자료구조</span>
-                <span>네트워크보안</span>
-              </div>
-            </article>
+          <div class="hero-visual" aria-label="프로필 이미지">
+            <div class="hero-profile-ring">
+              <img
+                src="KakaoTalk_20260604_212116913.jpg"
+                alt="박시우 프로필 이미지"
+              />
+            </div>
+            <div class="hero-profile-info">
+              <h2>Park Siwoo</h2>
+              <p>Computer Science Student</p>
+              <p>HTML · CSS · JavaScript</p>
+              <span id="learning-text">Currently Learning: HTML</span>
+            </div>
           </div>
         </div>
       </section>
 
-      <section id="links">
+      <section class="featured-work" aria-label="최근 작업물">
         <div class="container">
-          <h2 class="section-title">GitHub / Blog</h2>
-
-          <div class="grid two">
-            <a
-              href="https://github.com/park478392"
-              target="_blank"
-              class="card-link"
-            >
-              <article class="card">
-                <h3>GitHub</h3>
-                <p>팀 프로젝트 및 수업 프로젝트</p>
-                <p>개인 프로젝트</p>
-              </article>
-            </a>
-
-            <a
-              href="https://blog.naver.com/darknix03088"
-              target="_blank"
-              class="card-link"
-            >
-              <article class="card">
-                <h3>Blog</h3>
-                <p>C 언어 학습 기록</p>
-                <p>백준 문제 해설</p>
-              </article>
-            </a>
+          <div class="section-heading">
+            <h2>최근 작업물</h2>
+            <p>수업과 프로젝트를 진행하며 정리한 결과물입니다.</p>
           </div>
-        </div>
-      </section>
 
-      <section id="assignments">
-        <div class="container">
-          <h2 class="section-title">Assignments</h2>
-
-          <div class="grid three">
-            <a href="수업/hcj-main/index.html" class="card-link">
-              <article class="card">
-                <h3>첫번째 과제</h3>
-                <p>HTML 기초</p>
-                <p>div 요소 사용</p>
-                <p>a 요소 사용</p>
-                <p>p 요소 사용</p>
-              </article>
-            </a>
-
-            <a href="수업/park-siwoo-main/index.html" class="card-link">
-              <article class="card">
-                <h3>두번째 과제</h3>
-                <p>CSS 스타일</p>
-                <p>글자 색상 변경</p>
-                <p>배경 색상 변경</p>
-                <p>글자 크기 변경</p>
-              </article>
-            </a>
-
-            <a href="수업/seo-jun-ho-main/index.html" class="card-link">
-              <article class="card">
-                <h3>세번째 과제</h3>
-                <p>다양한 기능</p>
-                <p>미디어 삽입</p>
-                <p>오디오 삽입</p>
-                <p>비디오 삽입</p>
-              </article>
-            </a>
-          </div>
-        </div>
-      </section>
-
-      <section id="team">
-        <div class="container">
-          <h2 class="section-title">Team Project</h2>
-
-          <div class="grid two">
-            <article class="card">
-              <h3>프로젝트</h3>
-              <p>팀 프로젝트 설명</p>
+          <div class="work-grid">
+            <article class="work-card">
+              <span>HTML/CSS</span>
+              <h3>개인 포트폴리오 제작</h3>
               <p>
-                < 주요 사이버 보안 위협과 예방법 안내 웹사이트 ><br />
-                <br />본 프로젝트는 일상생활에서 사용자가 쉽게 접할 수 있는
-                다양한 사이버 보안 위협을 소개하고, 이에 대한 예방법을
-                체계적으로 안내하는 웹사이트를 제작하는 것을 목표로 합니다. 최근
-                피싱, 비밀번호 해킹, 개인정보 유출 등 다양한 보안 문제가
-                증가하고 있지만, 일반 사용자들은 이러한 위험성을 정확히 인지하지
-                못하는 경우가 많습니다. 따라서 본 웹사이트에서는 단순한 개념
-                설명에 그치지 않고, 실제 사례와 비교를 통해 사용자가 보안의
-                중요성을 보다 직관적으로 이해할 수 있도록 구성합니다.
-                <br /><br />사이트는 보안 정보를 단순히 나열하는 형식이 아니라,
-                리스트, 표, 카드형 레이아웃, 미디어 요소 등을 활용하여 사용자가
-                쉽고 흥미롭게 내용을 확인할 수 있도록 구성합니다. 주요 콘텐츠는
-                다음과 같이 구성됩니다. 메인 홈 화면 사이트 제목과 소개 문구를
-                배치하고, 대표 보안 수칙을 리스트 형식으로 제시합니다. 보안 이슈
-                페이지 피싱, 랜섬웨어, 개인정보 유출 등 주요 보안 이슈를
-                다룹니다. 또한 관련 뉴스 이미지나 미디어 자료를 함께 넣어 실제
-                사례와 연결해 보여줍니다. <br /><br />OWASP 페이지 OWASP Top
-                10의 주요 취약점을 소개하는 페이지로, 각 취약점에 대해 설명,
-                발생 원인, 대응 방법 등을 표 형식으로 정리합니다. 이를 통해 웹
-                보안의 핵심 개념을 보다 체계적으로 이해할 수 있도록 합니다. 보안
-                수칙 및 대응 가이드 페이지 강한 비밀번호 생성, 공용 와이파이
-                사용 시 주의사항, 의심스러운 링크 클릭 금지 등 실생활에서 바로
-                적용할 수 있는 보안 수칙을 안내합니다. 리스트를 통해 해야 할
-                행동과 하지 말아야 할 행동을 구분하고, 표를 통해 특정 상황에서의
-                위험한 행동과 안전한 행동을 비교하여 제시합니다.
+                HTML과 CSS를 사용해 여러 페이지로 구성된 개인 포트폴리오를
+                제작했습니다.
               </p>
+              <a href="assignments.html" class="text-link">과제 보기</a>
             </article>
-          </div>
-        </div>
-      </section>
 
-      <section id="members">
-        <div class="container">
-          <h2 class="section-title">Team Members</h2>
-
-          <div class="grid four">
-            <article class="card">
-              <div>
-                <h3>박형진</h3>
-                <p>팀장</p>
-                <p>프로젝트 전체 설계 및 구현</p>
-                <p>OWASP TOP10 페이지 설계 및 구현</p>
-                <p>최종 결과물 취합 및 배포</p>
-              </div>
+            <article class="work-card">
+              <span>JavaScript</span>
+              <h3>사다리게임 제작</h3>
+              <p>
+                수업에서 배운 JavaScript를 활용해 직접 사다리게임을 만들고
+                GitHub 저장소에 정리했습니다.
+              </p>
               <a
-                href="https://github.com/hamzgi"
+                href="https://github.com/park478392/sadari.git"
                 target="_blank"
-                class="github-btn"
-                >GitHub</a
+                rel="noopener noreferrer"
+                class="text-link"
+                >게임 코드 보기</a
               >
             </article>
 
-            <article class="card">
-              <div>
-                <h3>박지민</h3>
-                <p>팀원</p>
-                <p>뉴스 카드 동적 기능 구현</p>
-                <p>페이지 색상 디자인</p>
-                <p>다크모드 구현</p>
-              </div>
-              <a
-                href="https://github.com/wlals0693"
-                target="_blank"
-                class="github-btn"
-                >GitHub</a
-              >
-            </article>
-
-            <article class="card">
-              <div>
-                <h3>최보원</h3>
-                <p>팀원</p>
-                <p>팀 소개 페이지 설계 및 구현</p>
-                <p>메인 홈 페이지 설계 및 구현</p>
-                <p>총괄 디자인 담당</p>
-              </div>
-              <a
-                href="https://github.com/park478392"
-                target="_blank"
-                class="github-btn"
-                >GitHub</a
-              >
-            </article>
-
-            <article class="card">
-              <div>
-                <h3>박시우</h3>
-                <p>팀원</p>
-                <p>자료 조사 및 정리</p>
-                <p>보안 수칙 페이지</p>
-                <p>문서 작성 및 발표</p>
-              </div>
-              <a
-                href="https://github.com/park478392"
-                target="_blank"
-                class="github-btn"
-                >GitHub</a
-              >
+            <article class="work-card">
+              <span>Team Project</span>
+              <h3>팀 프로젝트 참여</h3>
+              <p>
+                팀원들과 역할을 나누어 작업하며 맡은 기능과 협업 과정을
+                정리했습니다.
+              </p>
+              <a href="team.html" class="text-link">프로젝트 보기</a>
             </article>
           </div>
         </div>
@@ -271,5 +115,7 @@
     <footer>
       <p>© 2026 Portfolio</p>
     </footer>
+
+    <script src="index.js"></script>
   </body>
 </html>
